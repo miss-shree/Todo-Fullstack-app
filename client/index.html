@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>To-Do list</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!--navbar start-->
+     <div id="navbar">
+            <div id="brand-logo">
+                <div id="typ-brand-box" class="typ-branding">TYP.</div>
+                <div>TITANS</div>
+            </div>
+            <div id="profile-links">
+                    
+                        <div>
+                                <input type="search" placeholder="Search" id="key" style="width:300px;height:25px;border:1px solid black;border-radius:20px;background-color: #ddd;">
+                                <button onclick="filter()">Search</button>
+                             </div>
+                             <div>
+                                    <button id="logout" onclick="logout()">Logout</button>
+                                </div>
+            </div>
+        </div>
+        <!--navbar end-->
+   
+    
+    <div class="list">
+<h1>My To-Do List</h1>
+
+<div id="todoList" class="todo">
+</div>
+
+<form class="new-item-add-form" id="edit"></form>
+<form class="new-item-add-form">
+    <h2>Add New Task</h2>
+    <input type="text" placeholder="Task Title" id="taskTitleInput">
+    <input type="text" placeholder="Task Description" id="taskDescriptionInput">
+    <input type="date" placeholder="Task Deadline" id="taskDeadlineInput">
+</form>
+<button class="add-btn" onclick="addTask()">Add Task</button>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
