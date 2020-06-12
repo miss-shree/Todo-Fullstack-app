@@ -59,25 +59,33 @@ function register(){
 }
 
 
-
+//rgistration form
 
 function newuser(){
     var form=document.getElementById("form");
     var registerform=`<div>
-                <div><h3 id="userhead">Register</h3></div>
-                <div>
-                <label>Enter your name</label><br />
-                <input type="text" placeholder="Name">
-                </div>
-                <div>
-                <label>Enter username</label><br />
-                <input type="text" placeholder="username" id="newuser">
-                </div>
-                <div>
-                <label>Enter password</label><br />
-                <input type="password" placeholder="Password" id="newpass">
-                </div>
-                <div><button onclick="register()">Register</div>
+    <div><h3 id="userhead" style="font-weight: bold; text-align: center; margin-top:0px;">Register</h3></div>
+    <div>
+    <label style="font-weight:bold;margin-bottom:10px;">Enter your name</label>
+<br><br>
+    <input style="border:1px solid #888;border-radius: 5px;height:30px;width:100%;background-color:#fff" type="text" placeholder="Name">
+
+<br><br>
+    </div>
+    <div>
+    <label style="font-weight:bold;margin-bottom:10px;">Enter username</label>
+<br><br>
+    <input style="border:1px solid #888;border-radius: 5px;height:30px;width:100%;background-color:#fff" type="text" placeholder="username" id="newuser">
+<br>
+<br>
+    </div>
+    <div>
+    <label style="font-weight:bold;margin-bottom:10px;">Enter password</label><br>
+        <br>
+    <input style="border:1px solid #888;border-radius: 5px;height:30px;width:100%;background-color:#fff" type="password" placeholder="Password" id="newpass">
+    </div>
+<br>
+    <div><button style="background-color:teal;color:floralwhite; height: 40px; width:100%" onclick="register()">Register</button></div>
                 </div>`
                 form.innerHTML=registerform;
 }
